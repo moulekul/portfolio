@@ -19,9 +19,286 @@
     <body>
         <div class="bg">
             <nav class="navbar">
-                
+                <ul class="navbar-nav">
+                    <li class="nav-logo">
+                        <img src="images/l-icon.png">
+                        <span class="logo-text">LukeMoule</span>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="link-text">Home</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" target="_blank" class="nav-link">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span class="link-text">CV</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="mailto:lukemoule20@gmail.com" class="nav-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="link-text">Contact</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://www.linkedin.com/in/lukemoule/" target="_blank" class="nav-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="link-text">LinkedIn</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="https://github.com/moulekul" target="_blank" class="nav-link" >
+                        <i class="fa-brands fa-github"></i>
+                        <span class="link-text">GitHub</span>
+                      </a>
+                    </li>
+                  </ul>
             </nav>
+
+            <div class="wrapper">
+                <div class="page-title-container">
+                    <h1 class="heading-text1">| Home</h1>
+                </div>
+
+                <section class="heading-text-container">
+                    <h1 class="heading-text2">Hi. I'm Luke</h1>
+                    <h1 class="heading-text3">A Junior Web Dev</h1>
+                    <h1 class="heading-text4">Thanks for stopping by!</h1>
+                      <div class="heading-line"></div>
+                       <a class="read-more__link">About Me</a>
+                        <div class="about">
+                          <p class="about__about-text about__about-text--heading">
+                            Passionate about all things JavaScript.
+                          </p>
+                          <p class="about__about-text">
+                            Whilst I came into the industry a designer, I quickly discovered HTML and CSS. The creative in me wanted nothing more to say I am a designer but the logical, problem solver in me knew I was a developer at heart. Luckily for me, Front End Development exists
+                            and appeases both these sides.
+                          </p> 
+                          <p class="about__about-text">
+                            My goals in this journey are fairly simple; to mentor those in need. To continue to learn and grow in every facet of my work, absorbing as much as I can from those my senior and to make positive contributions to which ever team I land in.
+                          </p> 
+                          <p class="about__about-text">
+                            My goals in this journey are fairly simple; to mentor those in need. To continue to learn and grow in every facet of my work, absorbing as much as I can from those my senior and to make positive contributions to which ever team I land in.
+                          </p> 
+                          <p class="about__about-text">
+                            If you’d like to find out more about me, don't hesitate to get in touch, all my details are available on my
+                            <a class="about__link" aria-label="CV on Google Drive" rel="noopener" target="_blank" href="#">CV right
+                              here</a>
+                              . My mentees have said some nice things about me on Linkedin too 
+                              <a class="about__link" target="_blank" href="#">see my recomendations</a>
+                              .
+                          </p> 
+                          <div class="heading-line"></div>
+                        </div>
+                </section>
+
+                <div class="portfolio">
+
+                    <!-- First Entry -->
+
+                    <div class="portfolio__entry">
+                      <div class="entry__img-container">
+                        <div class="shown-image">
+                          <picture>
+                            <img
+                              src="images/TNYT-logo.jpg"
+                              alt="TNYT React App Placeholder"
+                            />
+                          </picture>
+                        </div>
+                        <div class="hover-image">
+                          <picture>
+                            <img
+                              src="#"
+                              alt="TNYT React App Screenshot"
+                            />
+                          </picture>
+                        </div>
+                      </div>
+
+                      <div class="entry__text-container">
+                        <div class="entry__title-container">
+                          <h1 class="heading-text5">TNYT React App</h1>
+                        </div>
+            
+                        <div class="entry__link-container">
+                          <a
+                            aria-label="TNYT React App"
+                            rel="noopener"
+                            target="_blank"
+                            class="entry-link__see-live"
+                            href="#"
+                            >See Live</a
+                          >
+                          <a
+                            target="_blank"
+                            aria-label="TNYT React App Github"
+                            rel="noopener"
+                            class="entry-link__view-code"
+                            href="https://github.com/moulekul/TNYT-React-App"
+                            >View Code</a
+                          >
+                        </div>
+            
+                        <p class="entry__about-text">
+                          A fully responsive react CRUD application using The New York Times' news API with Supabase for Database, Auth and
+                          Hosting. This app pulls headlines from all the main sections of
+                          The New York Times. Users are able to login and leave comments on all
+                          articles.
+                          <br />
+                          <br />
+                          This app features:<br />
+                          - Various React hooks such as useEffect, useHistory and
+                          useLocation to make API calls and define routes.<br />
+                          - Multiple API calls to fetch News and Weather data.<br />
+                          - State stored and persisted using Redux and local storage.<br />
+                          - User authentication to allow for article comment creation,
+                          deletion and editing.
+                          <br />
+                          <br />
+                          I worked with The New York Times' style guide to retain brand
+                          consitency. MaterializeUI was used for the icons.
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Second Entry -->
+
+                    <div class="portfolio__entry">
+                        <div class="entry__img-container">
+                          <div class="shown-image">
+                            <picture>
+                              <img
+                                src="images/gatsby-logo.jpg"
+                                alt="Gatsby Blog Placeholder"
+                              />
+                            </picture>
+                          </div>
+                          <div class="hover-image">
+                            <picture>
+                              <img
+                                src="images/gatsby-ss.jpg"
+                                alt="Gatsby Blog Screenshot"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+              
+                        <div class="entry__text-container">
+                          <div class="entry__title-container">
+                            <h1 class="heading-text5">Gatsby Blog</h1>
+                          </div>
+              
+                        <div class="entry__link-container">
+                          <a
+                            aria-label="Gatsby Blog"
+                            rel="noopener"
+                            target="_blank"
+                            class="entry-link__see-live"
+                            href="https://lukemoule-gatsby-blog.netlify.app/"
+                            >See Live</a
+                          >
+                          <a
+                            target="_blank"
+                            aria-label="Gatsby Blog Github"
+                            rel="noopener"
+                            class="entry-link__view-code"
+                            href="https://github.com/moulekul/gatsby-blog"
+                            >View Code</a
+                          >
+                        </div>
+              
+                        <p class="entry__about-text">
+                          A blog website constructed using Gatsby static site
+                          generator powered by Contentful CMS and hosted on Netlify.
+                          <br />
+                          <br />
+                          This app features:<br />
+                          - Various React hooks such as useEffect, useHistory and
+                          useLocation to make API calls and define routes.<br />
+                          - Multiple API calls to fetch News and Weather data.<br />
+                          - State stored and persisted using Redux and local storage.<br />
+                          - User authentication to allow for article comment creation,
+                          deletion and editing.
+                          <br />
+                          <br />
+                          I worked with The Guardian's style guide to retain brand
+                          consitency. MaterializeUI was used for the icons.
+                        </p>
+                      </div>
+                    </div>
+          
+                    <!-- Third Entry -->
+              
+                    <div class="portfolio__entry">
+                      <div class="entry__img-container">
+                        <div class="shown-image">
+                          <picture>
+                            <img
+                              src="images/ToDoList-logo.jpg"
+                              alt="React To Do App Placeholder"
+                            />
+                          </picture>
+                        </div>
+                        <div class="hover-image">
+                          <picture>
+                            <img
+                              src="images/ToDoList-ss.jpg"
+                              alt="React To Do App Screenshot"
+                            />
+                          </picture>
+                        </div>
+                      </div>
+              
+                      <div class="entry__text-container">
+                        <div class="entry__title-container">
+                          <h1 class="heading-text5">React To Do App</h1>
+                        </div>
+              
+                        <div class="entry__link-container">
+                          <a
+                            aria-label="React To Do App"
+                            rel="noopener"
+                            target="_blank"
+                            class="entry-link__see-live"
+                            href="#"
+                          >See Live</a
+                          >
+                          <a
+                            target="_blank"
+                            aria-label="React To Do App Github"
+                            rel="noopener"
+                            class="entry-link__view-code"
+                            href="https://github.com/moulekul/todolist-react-app"
+                          >View Code</a
+                          >
+                        </div>
+              
+                        <p class="entry__about-text">
+                          A fully responsive react CRUD application using The Guardian
+                          News & Open Weather Map API with Firebase for Database, Auth and
+                          Hosting. This app pulls headlines from all the main sections of
+                          The Guardian. Users are able to login and leave comments on all
+                          articles.
+                          <br />
+                          <br />
+                          This app features:<br />
+                          - Various React hooks such as useEffect, useHistory and
+                          useLocation to make API calls and define routes.<br />
+                          - Multiple API calls to fetch News and Weather data.<br />
+                          - State stored and persisted using Redux and local storage.<br />
+                          - User authentication to allow for article comment creation,
+                          deletion and editing.
+                          <br />
+                          <br />
+                          I worked with The Guardian's style guide to retain brand
+                          consitency. MaterializeUI was used for the icons.
+                        </p>
+                        </div>
+                      </div>
+
+            </div>
         </div>
-
-
     </body>
