@@ -1,5 +1,369 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    color: #000;
+    background-color: #fff;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    height: 5em;
+    width: 100vw;
+    background-color: #191919;
+    z-index: 999;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.nav-logo {
+    display: none;
+}
+
+.nav-item {
+    font-size: 2rem;
+    width: 100%;
+    color: #b6b6b6;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    transition: 600ms;
+    filter: grayscale(100%) opacity(0.7);
+}
+
+.nav-link:hover {
+    color: #fff;
+    filter: grayscale(0%) opacity(1);
+    border-bottom: 0.15em solid #fff;     
+}
+    
+.link-text {
+    display: none;
+}
+
+
+
+
+
+
+
+    .wrapper {
+        display: grid;
+        grid-gap: 0;
+        padding: 2em 4em;
+    }
+
+    .page-title-container{
+        max-width: 50em;
+        padding-bottom: 1em;
+        overflow: hidden;
+      }   
+
+    .heading-text-container {
+        max-width: 50em;
+        overflow: hidden;
+      }
+
+    .heading-text1 {
+        font-size: 3rem;
+        font-weight: 200;
+    }
+
+    .heading-text2 {
+        margin-bottom: -0.2em;
+        font-size: 4rem;
+        font-weight: 600;
+    }
+
+    .heading-text3 {
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    .heading-text4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .heading-line {
+        display: block;
+        margin: 1em 0;
+        height: 0.2em;
+        width: 75%;
+        background-color: #191919;
+    }
+
+    .read-more__link {
+        display: block;
+        max-width: 12em;
+        padding: 0.5em 1em;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: center;
+        transition: all 0.2s ease;
+        border: 0.1em solid #191919;
+        cursor: pointer;
+    }
+
+    .read-more__link:hover {
+        color: #fff;
+        background-color: #191919;
+    }
+
+    .about {
+        height: 0;
+        transition: all 0.5s;
+    }
+
+    .about__open {
+        height: 45em;
+        transition: all 0.5s;
+    }
+
+    .about__about-text--heading {
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.6;
+    }
+
+    .about__about-text {
+        margin: 1em 0;
+        line-height: 1.7;
+        letter-spacing: 0.1px;
+    }
+
+    /*
+
+    .about__link {
+        font-weight: bold;
+        transition: all 0.2s;
+      }
+  
+      .about__link:hover {
+        opacity: 0.6;
+      }
+
+
+    */
+    
+
+    .portfolio {
+        padding: 1em 0 2em;
+    }
+
+    .portfolio>div {
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 0.2em solid #191919;
+    }
+
+    .portfolio__entry {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .entry__img-container {
+        position: relative;
+        box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+    }
+
+    .entry__img-container:hover .hover-image {
+        transition: all 0.5s;
+        opacity: 1;
+    }
+
+    .hover-image {
+        position: absolute;
+        top: 0;
+        transition: all 0.5s;
+        opacity: 0;
+    }
+
+    .heading-text5 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    .entry__text-container {
+        display: grid;
+        grid-gap: 0.5em;
+        max-width: 50em;
+    }
+
+    .entry__link-container {
+        display: flex;
+        position: relative;
+        align-items: center;
+        gap: 30px;
+    }
+      
+    .entry__link-container a {
+        font-size: 1.4rem;
+        text-align: center;
+        transition: all 0.2s ease;
+        border-bottom: 0.2em solid transparent;
+        overflow: hidden;
+    }
+      
+    .entry__link-container a:hover {
+        border-bottom-color: #191919;
+    }
+      
+    .entry__about-text {
+        line-height: 1.7;
+        letter-spacing: 0.1px;
+    }
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 800px) {
+        .about__open {
+            height: 32em;
+        }
+        
+        .read-more__link {
+            max-width: 14em;
+            font-size: 1.4rem;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .navbar {
+            top: 0;
+            width: 5em;
+            height: 100vh;
+            transition: width 600ms ease;
+        }
+
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+
+        .nav-logo img {
+            width: 5em;
+            height: 5em;
+        }
+
+        .logo-text {
+            display: none;
+            margin-left: 0.5em;
+            font-size: 2rem;
+            color: #fff;
+            text-transform: lowercase;
+        }
+
+        .nav-item:nth-last-child(2) {
+            margin-top: auto;
+        }
+
+        .nav-link:hover {
+            transition: all 0.5s ease;
+            border-bottom: none;
+            border-right: 0.25em solid #fff;
+            box-shadow: 0 0 0.15em #000;
+        }
+
+        .link-text {
+            margin-left: 2em;
+            font-size: 1.2rem;
+        }
+
+
+
+
+
+        .wrapper {
+            margin-left: 5em;
+            transition: margin-left 600ms ease;
+        }
+        
+          .navbar:hover {
+            width: 18em;
+          }
+        
+          .navbar:hover .logo-text, .navbar:hover .link-text {
+            display: inline;
+            animation: fadein 1.5s;
+          }
+        
+          @keyframes fadein {
+            from {
+              opacity: 0;
+            }
+        
+            to {
+              opacity: 1;
+            }
+          }
+          
+          .navbar:hover ~ .wrapper {
+            margin-left: 18em;
+          }
+
+
+
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0em 4em;
+            padding-right: 4em;
+
+        }
+
+        .portfolio>div {
+            border-bottom: none;
+          }
+      
+    }
+
+    @media (min-width: 1600px) {
+        :root {
+           font-size: 20px;
+        }
+      
+       .wrapper {
+           max-width: 90vw;
+        }
+      
+        .about__open {
+            height: 30em;
+        }
+
+    }
+    

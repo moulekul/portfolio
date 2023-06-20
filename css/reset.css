@@ -1,0 +1,29 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+	padding: 0;
+	font: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
