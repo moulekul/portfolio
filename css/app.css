@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.bg {
+body {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -296,6 +296,18 @@
             border-bottom: none;
             border-right: 0.25em solid #fff;
             box-shadow: 0 0 0.15em #000;
+        }
+        
+        .icon-container {
+            position: fixed;
+            left: 0.75em;
+            width: 1em;
+        }
+
+        .icon-container i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .link-text {
