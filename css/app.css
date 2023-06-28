@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
+.bg {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -13,6 +13,9 @@ body {
     color: #000;
     background-color: #fff;
 }
+
+
+/* NAVBAR */
 
 .navbar {
     position: fixed;
@@ -59,10 +62,9 @@ body {
 }
 
 
+/* DISPLAY PAGE */
 
-
-
-
+    /* Title Section */
 
     .wrapper {
         display: grid;
@@ -74,12 +76,12 @@ body {
         max-width: 50em;
         padding-bottom: 1em;
         overflow: hidden;
-      }   
+    }   
 
     .heading-text-container {
         max-width: 50em;
         overflow: hidden;
-      }
+    }
 
     .heading-text1 {
         font-size: 3rem;
@@ -133,7 +135,7 @@ body {
     }
 
     .about__open {
-        height: 45em;
+        height: 42em;
         transition: all 0.5s;
     }
 
@@ -149,20 +151,16 @@ body {
         letter-spacing: 0.1px;
     }
 
-    /*
-
     .about__link {
         font-weight: bold;
         transition: all 0.2s;
-      }
+    }
   
-      .about__link:hover {
+    .about__link:hover {
         opacity: 0.6;
-      }
+    }
 
-
-    */
-    
+    /* Portfolio Section */
 
     .portfolio {
         padding: 1em 0 2em;
@@ -200,7 +198,7 @@ body {
     }
 
     .heading-text5 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 600;
     }
 
@@ -218,7 +216,7 @@ body {
     }
       
     .entry__link-container a {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         text-align: center;
         transition: all 0.2s ease;
         border-bottom: 0.2em solid transparent;
@@ -235,147 +233,133 @@ body {
     }
 
 
+/* RESPONSIVE DESIGN */
 
-
-
-
-
-
-
-
-    @media screen and (min-width: 800px) {
-        .about__open {
-            height: 32em;
-        }
-        
-        .read-more__link {
-            max-width: 14em;
-            font-size: 1.4rem;
-        }
+@media screen and (min-width: 800px) {
+    .about__open {
+        height: 32em;
     }
+        
+    .read-more__link {
+        max-width: 14em;
+        font-size: 1.4rem;
+    }
+}
 
-    @media screen and (min-width: 1000px) {
-        .navbar {
+@media screen and (min-width: 1000px) {
+    .navbar {
             top: 0;
             width: 5em;
             height: 100vh;
             transition: width 600ms ease;
-        }
+    }
 
-        .navbar-nav {
+    .navbar-nav {
             display: flex;
             flex-direction: column;
             height: 100%;
-        }
+    }
 
-        .nav-logo {
+    .nav-logo {
             display: flex;
             align-items: center;
             margin-bottom: 1em;
-        }
+    }
 
-        .nav-logo img {
-            width: 5em;
-            height: 5em;
-        }
+    .nav-logo img {
+        width: 5em;
+        height: 5em;
+    }
 
-        .logo-text {
-            display: none;
-            margin-left: 0.5em;
-            font-size: 2rem;
-            color: #fff;
-            text-transform: lowercase;
-        }
+    .logo-text {
+        display: none;
+        margin-left: 0.5em;
+        font-size: 2rem;
+        color: #fff;
+        text-transform: lowercase;
+    }
 
-        .nav-item:nth-last-child(2) {
-            margin-top: auto;
-        }
+    .nav-item:nth-last-child(2) {
+        margin-top: auto;
+    }
 
-        .nav-link:hover {
-            transition: all 0.5s ease;
-            border-bottom: none;
-            border-right: 0.25em solid #fff;
-            box-shadow: 0 0 0.15em #000;
+    .nav-link:hover {
+        transition: all 0.5s ease;
+        border-bottom: none;
+        border-right: 0.25em solid #fff;
+        box-shadow: 0 0 0.15em #000;
+    }
+        
+    .icon-container {
+        position: fixed;
+        left: 0.75em;
+        width: 1em;
+    }
+
+    .icon-container i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-text {
+        margin-left: 2em;
+        font-size: 1.2rem;
+    }
+
+    .wrapper {
+        margin-left: 5em;
+        transition: margin-left 600ms ease;
+    }
+        
+    .navbar:hover {
+        width: 18em;
+    }
+        
+    .navbar:hover .logo-text, .navbar:hover .link-text {
+        display: inline;
+        animation: fadein 1.5s;
+    }
+        
+    @keyframes fadein {
+        from {
+            opacity: 0;
         }
         
-        .icon-container {
-            position: fixed;
-            left: 0.75em;
-            width: 1em;
+        to {
+            opacity: 1;
         }
-
-        .icon-container i {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .link-text {
-            margin-left: 2em;
-            font-size: 1.2rem;
-        }
-
-
-
-
-
-        .wrapper {
-            margin-left: 5em;
-            transition: margin-left 600ms ease;
-        }
-        
-          .navbar:hover {
-            width: 18em;
-          }
-        
-          .navbar:hover .logo-text, .navbar:hover .link-text {
-            display: inline;
-            animation: fadein 1.5s;
-          }
-        
-          @keyframes fadein {
-            from {
-              opacity: 0;
-            }
-        
-            to {
-              opacity: 1;
-            }
-          }
+    }
           
-          .navbar:hover ~ .wrapper {
-            margin-left: 18em;
-          }
-
-
-
-
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 0em 4em;
-            padding-right: 4em;
-
-        }
-
-        .portfolio>div {
-            border-bottom: none;
-          }
-      
+    .navbar:hover ~ .wrapper {
+        margin-left: 18em;
     }
 
-    @media (min-width: 1600px) {
-        :root {
-           font-size: 20px;
-        }
-      
-       .wrapper {
-           max-width: 90vw;
-        }
-      
-        .about__open {
-            height: 30em;
-        }
-
+    .portfolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0em 4em;
+        padding-right: 4em;
     }
+
+    .portfolio>div {
+        border-bottom: none;
+    }
+      
+}
+
+@media (min-width: 1600px) {
+    :root {
+        font-size: 20px;
+    }
+      
+    .wrapper {
+        max-width: 90vw;
+    }
+      
+    .about__open {
+        height: 32em;
+    }
+
+}
     
