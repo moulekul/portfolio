@@ -136,7 +136,7 @@
 
     .about__open {
         height: 42em;
-        transition: all 0.5s;
+        transition: all 1s;
     }
 
     .about__about-text--heading {
@@ -163,7 +163,7 @@
     /* Portfolio Section */
 
     .portfolio {
-        padding: 1em 0 2em;
+        padding: 2em 0 2em;
     }
 
     .portfolio>div {
