@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
-    font-size: 16px;
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -69,7 +69,7 @@
     .wrapper {
         display: grid;
         grid-gap: 0;
-        padding: 2em 4em;
+        padding: 2em 1.5em;
     }
 
     .page-title-container{
@@ -95,12 +95,12 @@
     }
 
     .heading-text3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 300;
     }
 
     .heading-text4 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 600;
     }
 
@@ -135,7 +135,7 @@
     }
 
     .about__open {
-        height: 42em;
+        height: 55em;
         transition: all 1s;
     }
 
@@ -234,8 +234,31 @@
 
 
 /* RESPONSIVE DESIGN */
+@media screen and (min-width: 450px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .about__open {
+        height: 40em;
+    }
+}
 
 @media screen and (min-width: 800px) {
+    .wrapper {
+        padding: 2em 4em;
+    }
+
+    .heading-text3 {
+        font-size: 3rem;
+    }
+
+    .heading-text4 {
+        font-size: 1.5rem;
+    }
+
     .about__open {
         height: 32em;
     }
