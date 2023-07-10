@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -234,9 +234,9 @@
 
 
 /* RESPONSIVE DESIGN */
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 450px) {
     :root {
-        font-size: 16px;
+        font-size: 0.75rem;
     }
 }
 
@@ -246,7 +246,7 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .wrapper {
         padding: 2em 4em;
     }
@@ -269,7 +269,7 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
     .navbar {
             top: 0;
             width: 5em;
@@ -373,7 +373,7 @@
 
 @media (min-width: 1600px) {
     :root {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
       
     .wrapper {
